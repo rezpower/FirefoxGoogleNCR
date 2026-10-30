@@ -1,0 +1,1163 @@
+C:\Windows\System32>adb shell dumpsys package com.google.android.tvlauncher
+Activity Resolver Table:
+  Schemes:
+      http:
+        a0c28 com.google.android.tvlauncher/.home.discover.tutorial.TutorialActivity filter 2eb8d41
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tv.google.com": -1
+          Path: "PatternMatcher{PREFIX: /tutorial}"
+        c07c2d4 com.google.android.tvlauncher/.shop.library.LibraryPageActivity filter a2bc7d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tv.google.com": -1
+          Path: "PatternMatcher{PREFIX: /library}"
+      https:
+        a0c28 com.google.android.tvlauncher/.home.discover.tutorial.TutorialActivity filter 2eb8d41
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tv.google.com": -1
+          Path: "PatternMatcher{PREFIX: /tutorial}"
+        c07c2d4 com.google.android.tvlauncher/.shop.library.LibraryPageActivity filter a2bc7d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tv.google.com": -1
+          Path: "PatternMatcher{PREFIX: /library}"
+
+  Non-Data Actions:
+      com.android.tv.applink.action.REMOVE_APP_LINK:
+        8fca83c com.google.android.tvlauncher/.appsview.RemoveAppLinkActivity filter 93e19c5
+          Action: "com.android.tv.applink.action.REMOVE_APP_LINK"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.android.tv.action.VIEW_LICENSES:
+        cc6e8a4 com.google.android.tvlauncher/.settings.OpenSourceActivity filter e6b360d
+          Action: "com.android.tv.action.VIEW_LICENSES"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.tvlauncher.useraccounts.accountselector.view.ACCOUNT_SELECTOR:
+        668772 com.google.android.tvlauncher/.useraccounts.accountselector.view.AccountSelectorActivity filter d1897c3
+          Action: "com.google.android.tvlauncher.useraccounts.accountselector.view.ACCOUNT_SELECTOR"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        c5374f8 com.google.android.tvlauncher/.MainActivity filter cfc8dd1
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.MONKEY"
+          mPriority=2, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.android.tv.applink.action.ADD_APP_LINK:
+        197200e com.google.android.tvlauncher/.appsview.AddAppLinkActivity filter 1f11a2f
+          Action: "com.android.tv.applink.action.ADD_APP_LINK"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.android.tv.action.VIEW_INPUTS:
+        8dbeb10 com.google.android.tvlauncher/.inputs.InputsPanelActivity filter 5a22609
+          Action: "com.android.tv.action.VIEW_INPUTS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.tvlauncher.intent.action.LAUNCH_BOOT_HELPER_EMPTY_ACTIVITY:
+        49b22e6 com.google.android.tvlauncher/.BootHelperEmptyActivity filter e942027
+          Action: "com.google.android.tvlauncher.intent.action.LAUNCH_BOOT_HELPER_EMPTY_ACTIVITY"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.ALL_APPS:
+        ea92f1a com.google.android.tvlauncher/.appsview.AppsViewActivity filter 27f2a4b
+          Action: "android.intent.action.ALL_APPS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.leanbacklauncher.SETTINGS:
+        92c29c2 com.google.android.tvlauncher/.settings.HomeScreenSettingsActivity filter a9313d3
+          Action: "com.google.android.leanbacklauncher.SETTINGS"
+          Action: "com.google.android.tvlauncher.SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.tvlauncher.SETTINGS:
+        92c29c2 com.google.android.tvlauncher/.settings.HomeScreenSettingsActivity filter a9313d3
+          Action: "com.google.android.leanbacklauncher.SETTINGS"
+          Action: "com.google.android.tvlauncher.SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.tvlauncher.NOTIFICATIONS:
+        b644036 com.google.android.tvlauncher/.notifications.NotificationsSidePanelActivity filter 503fb37
+          Action: "com.android.tvlauncher.NOTIFICATIONS"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        5883840 com.google.android.tvlauncher/.appsview.data.MarketUpdateReceiver filter da3a379
+          Action: "com.android.launcher.action.ACTION_PACKAGE_ENQUEUED"
+          Action: "com.android.launcher.action.ACTION_PACKAGE_DOWNLOADING"
+          Action: "com.android.launcher.action.ACTION_PACKAGE_INSTALLING"
+          Action: "com.android.launcher.action.ACTION_PACKAGE_DEQUEUED"
+          Scheme: "package"
+        311a8be com.google.android.tvlauncher/.pageframework.broadcastreceivers.PackageInstallReceiver filter e2ed1f
+          Action: "com.android.launcher.action.ACTION_PACKAGE_ENQUEUED"
+          Action: "com.android.launcher.action.ACTION_PACKAGE_DOWNLOADING"
+          Action: "com.android.launcher.action.ACTION_PACKAGE_INSTALLING"
+          Action: "com.android.launcher.action.ACTION_PACKAGE_DEQUEUED"
+          Scheme: "package"
+      tv:
+        2681196 com.google.android.tvlauncher/.TvContentIntentReceiver filter 6bef7b3
+          Action: "com.google.android.tvlauncher.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tv"
+      http:
+        2681196 com.google.android.tvlauncher/.TvContentIntentReceiver filter 80b8904
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "tv.google.com": -1
+          Path: "PatternMatcher{PREFIX: /freeplay}"
+      https:
+        2681196 com.google.android.tvlauncher/.TvContentIntentReceiver filter baf6117
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "tv.google.com": -1
+          Path: "PatternMatcher{PREFIX: /freeplay}"
+        2681196 com.google.android.tvlauncher/.TvContentIntentReceiver filter dc0beed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "tv.google.com": -1
+          Path: "PatternMatcher{PREFIX: /shop}"
+        2681196 com.google.android.tvlauncher/.TvContentIntentReceiver filter d8bb122
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "tv.google.com": -1
+          Path: "PatternMatcher{PREFIX: /entity}"
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        c660c46 com.google.android.tvlauncher/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 354be07
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.tvlauncher.intent.action.TV_INPUT_INFO_CHANGED:
+        beccf58 com.google.android.tvlauncher/.application.boot.LastActiveInputReceiver filter 11148b1
+          Action: "com.google.android.tvlauncher.intent.action.TV_INPUT_INFO_CHANGED"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        c57bd6e com.google.android.tvlauncher/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter e275c0f
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        63a3170 com.google.android.tvlauncher/com.google.android.libraries.appdoctor.AppDoctorReceiver filter e775ce9
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      com.google.android.tvlauncher.home.action.DISMISS_ADS_NOTIFICATION:
+        5bb92ca com.google.android.tvlauncher/.home.AdsPersonalizationAwarenessNotificationReceiver filter 9d33c3b
+          Action: "com.google.android.tvlauncher.home.action.DISMISS_ADS_NOTIFICATION"
+      android.intent.action.LOCALE_CHANGED:
+        768f49c com.google.android.tvlauncher/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter edfdea5
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        6e6a6d2 com.google.android.tvlauncher/com.google.firebase.iid.FirebaseInstanceIdReceiver filter f7533a3
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BOOT_COMPLETED:
+        3c6427a com.google.android.tvlauncher/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter 807aa2b
+          Action: "android.intent.action.BOOT_COMPLETED"
+        db4d6a0 com.google.android.tvlauncher/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f245259
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.tvlauncher.home.discover.tutorial.action.DISMISS_NOTIFICATION:
+        9d8986c com.google.android.tvlauncher/.home.discover.tutorial.TutorialNotificationReceiver filter f31fe35
+          Action: "com.google.android.tvlauncher.home.discover.tutorial.action.DISMISS_NOTIFICATION"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d645e1e com.google.android.tvlauncher/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 19d66ff
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        95ebe88 com.google.android.tvlauncher/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter 94c021
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.gms.phenotype.UPDATE:
+        d653b34 com.google.android.tvlauncher/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter a5c3d5d
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        6f012f6 com.google.android.tvlauncher/com.google.android.build.data.PropertiesServiceHolder filter a4336f7
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        d743e2a com.google.android.tvlauncher/com.google.android.libraries.notifications.platform.entrypoints.firebase.FirebaseMessagingServiceImpl filter 3eb741b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        82d9b8 com.google.android.tvlauncher/com.google.firebase.messaging.FirebaseMessagingService filter 25cf391
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        da0bccc com.google.android.tvlauncher/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 8bebb15
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Preferred Activities User 0:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        7dbc8eb com.google.android.tvlauncher/.MainActivity
+         mMatch=0x100000 mAlways=true
+          Selected from:
+            com.google.android.tvlauncher/.MainActivity
+            com.spocky.projengmenu/.ui.home.MainActivity
+            com.android.tv.settings/.system.FallbackHome
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+
+Permissions:
+  Permission [com.google.android.tvlauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (bebfbdb):
+    sourcePackage=com.google.android.tvlauncher
+    uid=10062 gids=null type=0 prot=signature
+    perm=Permission{992678 com.google.android.tvlauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+
+Registered ContentProviders:
+  com.google.android.tvlauncher/androidx.startup.InitializationProvider:
+    Provider{3be2151 com.google.android.tvlauncher/androidx.startup.InitializationProvider}
+  com.google.android.tvlauncher/com.google.android.libraries.notifications.platform.media.GnpFileProvider:
+    Provider{bc10db6 com.google.android.tvlauncher/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+  com.google.android.tvlauncher/.contentprovider.WatsonKatnissConfigContentProvider:
+    Provider{4247ab7 com.google.android.tvlauncher/.contentprovider.WatsonKatnissConfigContentProvider}
+
+ContentProvider Authorities:
+  [com.google.android.tvlauncher.androidx-startup]:
+    Provider{3be2151 com.google.android.tvlauncher/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{1763224 com.google.android.tvlauncher}
+  [com.google.android.tvlauncher.contentprovider.WatsonKatnissConfigContentProvider]:
+    Provider{4247ab7 com.google.android.tvlauncher/.contentprovider.WatsonKatnissConfigContentProvider}
+      applicationInfo=ApplicationInfo{e72818d com.google.android.tvlauncher}
+  [com.google.android.tvlauncher.chime_sdk_file_provider]:
+    Provider{bc10db6 com.google.android.tvlauncher/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+      applicationInfo=ApplicationInfo{a484f42 com.google.android.tvlauncher}
+
+Key Set Manager:
+  [com.google.android.tvlauncher]
+      Signing KeySets: 23
+
+Packages:
+  Package [com.google.android.tvlauncher] (7fc0b53):
+    userId=10062
+    pkg=Package{6f64c90 com.google.android.tvlauncher}
+    codePath=/data/app/~~BGVaEVtVydUSucUQPW1aDA==/com.google.android.tvlauncher-21vTD0PRXNg-AvS7Ioo8cQ==
+    resourcePath=/data/app/~~BGVaEVtVydUSucUQPW1aDA==/com.google.android.tvlauncher-21vTD0PRXNg-AvS7Ioo8cQ==
+    legacyNativeLibraryDir=/data/app/~~BGVaEVtVydUSucUQPW1aDA==/com.google.android.tvlauncher-21vTD0PRXNg-AvS7Ioo8cQ==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1010943512 minSdk=29 targetSdk=36
+    versionName=7.7.15-968255986-f
+    splits=[base, config.en, config.xhdpi]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{6f64c90 com.google.android.tvlauncher}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:///... }, Intent { act=android.intent.action.VIEW dat=http:///... }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=androidx.window.extensions.layout.EngagementModeService }]
+    dataDir=/data/user/0/com.google.android.tvlauncher
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2026-08-27 23:53:31
+    firstInstallTime=2009-01-01 01:00:00
+    lastUpdateTime=2026-08-27 23:54:22
+    installerPackageName=com.android.vending
+    signatures=PackageSignatures{992a989 version:3, signatures:[e8a2cca3], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    declared permissions:
+      com.google.android.tvlauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      com.google.android.tvlauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.MEDIA_CONTENT_CONTROL
+      com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      com.android.providers.tv.permission.READ_EPG_DATA
+      android.permission.INTERNET
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.NOTIFY_TV_INPUTS
+      android.permission.QUERY_ALL_PACKAGES
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.BIND_APPWIDGET
+      android.permission.CHANGE_HDMI_CEC_ACTIVE_SOURCE
+      android.permission.READ_CONTENT_RATING_SYSTEMS
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.SET_WALLPAPER_HINTS
+      android.permission.SET_WALLPAPER
+      com.google.android.assistant.READ_HOTWORD_STATE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.gms.permission.AD_ID
+      android.permission.POST_NOTIFICATIONS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.providers.tv.permission.READ_EPG_DATA: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.providers.tv.permission.WRITE_EPG_DATA: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.BIND_APPWIDGET: granted=true
+      com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.CHANGE_HDMI_CEC_ACTIVE_SOURCE: granted=true
+      android.permission.NOTIFY_TV_INPUTS: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.READ_CONTENT_RATING_SYSTEMS: granted=true
+      com.google.android.assistant.READ_HOTWORD_STATE: granted=true
+      android.permission.SET_WALLPAPER_HINTS: granted=true
+      com.google.android.tvlauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.MEDIA_CONTENT_CONTROL: granted=true
+    User 0: ceDataInode=262491 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      lastDisableTimeStamp: Thu Aug 27 23:54:22 GMT+02:00 2026
+      gids=[3003]
+      runtime permissions:
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.tvlauncher] (c101d8e):
+    userId=10062
+    pkg=Package{5b209af com.google.android.tvlauncher}
+    codePath=/system/product/priv-app/TVLauncher
+    resourcePath=/system/product/priv-app/TVLauncher
+    legacyNativeLibraryDir=/system/product/priv-app/TVLauncher/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1010902809 minSdk=26 targetSdk=29
+    versionName=3.1.2-366946414-f
+    splits=[base]
+    apkSigningVersion=0
+    applicationInfo=ApplicationInfo{5b209af com.google.android.tvlauncher}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/com.google.android.tvlauncher
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    timeStamp=2009-01-01 01:00:00
+    firstInstallTime=2009-01-01 01:00:00
+    lastUpdateTime=2009-01-01 01:00:00
+    signatures=PackageSignatures{81ba1bc version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    requested permissions:
+      android.permission.MEDIA_CONTENT_CONTROL
+      com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      com.android.providers.tv.permission.READ_EPG_DATA
+      android.permission.INTERNET
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.NOTIFY_TV_INPUTS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.BIND_APPWIDGET
+      android.permission.CHANGE_HDMI_CEC_ACTIVE_SOURCE
+      android.permission.READ_CONTENT_RATING_SYSTEMS
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.SET_WALLPAPER_HINTS
+      android.permission.SET_WALLPAPER
+      com.google.android.assistant.READ_HOTWORD_STATE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.ACCESS_NETWORK_STATE
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.providers.tv.permission.READ_EPG_DATA: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.providers.tv.permission.WRITE_EPG_DATA: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.BIND_APPWIDGET: granted=true
+      com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.CHANGE_HDMI_CEC_ACTIVE_SOURCE: granted=true
+      android.permission.NOTIFY_TV_INPUTS: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.READ_CONTENT_RATING_SYSTEMS: granted=true
+      com.google.android.assistant.READ_HOTWORD_STATE: granted=true
+      android.permission.SET_WALLPAPER_HINTS: granted=true
+      android.permission.MEDIA_CONTENT_CONTROL: granted=true
+    User 0: ceDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      lastDisableTimeStamp: Thu Jan 01 01:00:00 GMT+01:00 1970
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+    com.plexapp.android:
+      com.google.android.tvlauncher
+    com.sfr.android.sfrsport:
+      com.google.android.tvlauncher
+    org.smarttube.stable:
+      com.google.android.tvlauncher
+  queries via intent:
+    org.xbmc.kodi:
+      com.google.android.tvlauncher
+    org.smarttube.stable:
+      com.google.android.tvlauncher
+    com.spocky.projengmenu:
+      com.google.android.tvlauncher
+  queryable via interaction:
+    User 0:
+      [com.nvidia.shieldservice,com.nvidia.shield.registration,com.android.keychain,com.android.tv.settings,com.android.inputdevices,com.android.providers.settings,com.nvidia.overscancomp,com.nvidia.wifi.countrycode,com.nvidia.nvgamecast,com.nvidia.factory,com.android.networkstack.inprocess,com.android.localtransport,com.nvidia.tegraprofiler.security,com.android.dynsystem,com.nvidia.shieldtech.hooks,com.nvidia.remotelocator,com.nvidia.shield.appselector,com.android.wallpaperbackup,com.nvidia.NvCPLSvc,com.android.location.fused,com.nvidia.diagtools,com.nvidia.bluetooth.ps3usbpairer,com.nvidia.factorybundling,android,com.nvidia.stats,com.nvidia.ControllerMapper,com.nvidia.bluetooth.ShieldBluetoothManager,com.nvidia.KeyComboOta,com.nvidia.NvCPLUpdater,com.nvidia.factorysyschecker,com.nvidia.feedback,com.nvidia.shield.smbserver,com.nvidia.nvaudiosvc,com.nvidia.benchmarkblocker,com.nvidia.shieldtech.proxy,com.nvidia.irtuner,com.android.networkstack.tethering.inprocess]:
+        com.google.android.tvlauncher
+      com.android.providers.tv:
+        com.google.android.tvlauncher
+      com.google.android.tvlauncher:
+        [com.nvidia.shieldservice,com.nvidia.shield.registration,com.android.keychain,com.android.tv.settings,com.android.inputdevices,com.android.providers.settings,com.nvidia.overscancomp,com.nvidia.wifi.countrycode,com.nvidia.nvgamecast,com.nvidia.factory,com.android.networkstack.inprocess,com.android.localtransport,com.nvidia.tegraprofiler.security,com.android.dynsystem,com.nvidia.shieldtech.hooks,com.nvidia.remotelocator,com.nvidia.shield.appselector,com.android.wallpaperbackup,com.nvidia.NvCPLSvc,com.android.location.fused,com.nvidia.diagtools,com.nvidia.bluetooth.ps3usbpairer,com.nvidia.factorybundling,android,com.nvidia.stats,com.nvidia.ControllerMapper,com.nvidia.bluetooth.ShieldBluetoothManager,com.nvidia.KeyComboOta,com.nvidia.NvCPLUpdater,com.nvidia.factorysyschecker,com.nvidia.feedback,com.nvidia.shield.smbserver,com.nvidia.nvaudiosvc,com.nvidia.benchmarkblocker,com.nvidia.shieldtech.proxy,com.nvidia.irtuner,com.android.networkstack.tethering.inprocess]
+      com.google.android.tvrecommendations:
+        com.google.android.tvlauncher
+      [com.google.android.gms,com.google.android.gsf,com.google.android.sss.authbridge]:
+        com.google.android.tvlauncher
+      com.google.android.katniss:
+        com.google.android.tvlauncher
+      com.google.android.inputmethod.latin:
+        com.google.android.tvlauncher
+
+Package Changes:
+  Sequence number=9
+  User 0:
+    seq=3, package=com.google.android.tvrecommendations
+    seq=4, package=com.nvidia.bbciplayer.launchsport
+    seq=5, package=com.nvidia.bbciplayer.launch
+    seq=7, package=com.netflix.ninja
+    seq=8, package=android.autoinstalls.config.nvidia
+
+
+Dexopt state:
+  [com.google.android.tvlauncher]
+    path: /data/app/~~BGVaEVtVydUSucUQPW1aDA==/com.google.android.tvlauncher-21vTD0PRXNg-AvS7Ioo8cQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt]
+      known secondary dex files:
+        /data/user/0/com.google.android.tvlauncher/app_pccache/5/BE9A61ABBF5A97C8328BE6223F3E2589CE74306D/pcam.jar
+          class loader context: PCL[];PCL[/data/app/~~BGVaEVtVydUSucUQPW1aDA==/com.google.android.tvlauncher-21vTD0PRXNg-AvS7Ioo8cQ==/base.apk]
+        /data/user/0/com.google.android.tvlauncher/app_pccache/5/CE6F273D78E52497128F4B1536E4041972E94FE8/pcam.jar
+          class loader context: PCL[];PCL[/data/app/~~BGVaEVtVydUSucUQPW1aDA==/com.google.android.tvlauncher-21vTD0PRXNg-AvS7Ioo8cQ==/base.apk]
+        /data/user/0/com.google.android.tvlauncher/cache/1782164920746.jar
+          class loader context: PCL[];PCL[/data/app/~~BGVaEVtVydUSucUQPW1aDA==/com.google.android.tvlauncher-21vTD0PRXNg-AvS7Ioo8cQ==/base.apk]
+
+
+Compiler stats:
+  [com.google.android.tvlauncher]
+     base.apk - 6319
+     TVLauncher.apk - 211
+GeoCountry provider:
+  #0 ip-for-legacy-device:false FR Pair{ip-for-legacy-device location service is [off] last known location is null IPGeoProvider : allowProxy false; last invalid result null; last success result date Fri Oct 30 18:03:13 GMT+01:00 2026}
+  #1 locale:true US Pair{locale com.android.server.pm.LanguageGeoProvider@2735545}
+Policy repo contains 10 policies
+NvAppHidingByRegions List:
+  com.nvidia.bbciplayer.launchsport: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  com.nvidia.bbciplayer.launchsounds: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  pt.nostv.tv: {always : postpone}
+  air.com.vudu.air.DownloaderTablet: {provider_sensitive: {
+        locale : {always : disable}
+        ip-for-legacy-device : {whitelist:[AS, GU, MP, PR, US, VI]}
+        ip : {whitelist:[AS, GU, MP, PR, US, VI]}
+        location : {whitelist:[AS, GU, MP, PR, US, VI]}
+         }}
+  com.amazon.amazonvideo.livingroom: {whitelist:[AD, AE, AF, AG, AI, AL, AM, AO, AQ, AR, AS, AT, AU, AW, AX, AZ, BA, BB, BD, BE, BF, BG, BH, BI, BJ, BL, BM, BN, BO, BR, BS, BT, BV, BW, BY, BZ, CA, CC, CD, CF, CG, CH, CI, CK, CL, CM, CO, CR, CV, CW, CX, CY, CZ, DE, DJ, DK, DM, DO, DZ, EC, EE, EG, EH, ER, ES, ET, FI, FJ, FK, FM, FO, FR, GA, GB, GD, GE, GF, GG, GH, GI, GL, GM, GN, GP, GQ, GR, GS, GT, GU, GW, GY, HK, HM, HN, HR, HT, HU, ID, IE, IL, IM, IN, IO, IQ, IS, IT, JE, JM, JO, JP, KE, KG, KH, KI, KM, KN, KR, KW, KY, KZ, LA, LB, LC, LI, LK, LR, LS, LT, LU, LV, LY, MA, MC, MD, ME, MF, MG, MH, MK, ML, MM, MN, MO, MP, MQ, MR, MS, MT, MU, MV, MW, MX, MY, MZ, NA, NC, NE, NF, NG, NI, NL, NO, NP, NR, NU, NZ, OM, PA, PE, PF, PG, PH, PK, PL, PM, PN, PR, PS, PT, PW, PY, QA, RE, RO, RS, RU, RW, SA, SB, SC, SE, SG, SH, SI, SJ, SK, SL, SM, SN, SO, SR, SS, ST, SV, SZ, TC, TD, TF, TG, TH, TJ, TK, TL, TM, TN, TO, TR, TT, TV, TW, TZ, UA, UG, UM, US, UY, UZ, VA, VC, VE, VG, VI, VN, VU, WF, WS, YE, YT, ZA, ZM, ZW]}
+  com.zattoo.player: {state_sensitive:
+        default :{provider_sensitive: {
+        locale : {whitelist:[CH, DE]}
+        ip-for-legacy-device : {whitelist:[CH, DE]}
+        ip : {whitelist:[CH, DE]}
+        location : {whitelist:[CH, DE]}
+         }}
+        enabled :{always : postpone}
+        disabled        :{provider_sensitive: {
+        locale : {whitelist:[CH, DE]}
+        ip-for-legacy-device : {whitelist:[CH, DE]}
+        ip : {whitelist:[CH, DE]}
+        location : {whitelist:[CH, DE]}
+         }}
+        disabled_user   :{always : postpone}
+        disabled_until_used     :{always : postpone}}
+  com.amazon.music.tv: {whitelist:[AU, BR, CA, DE, ES, FR, GB, IE, IN, IT, JP, MX, US]}
+  air.ITVMobilePlayer: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  com.nvidia.bbciplayer: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  com.nvidia.bbciplayer.launch: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  com.netflix.ninja: {always : postpone}
+NvAppHidingByOverride list:
+  air.com.vudu.air.DownloaderTablet overrides com.nvidia.vuduapp
+Apps disabled in US(locale,E)by region rules:
+  com.nvidia.bbciplayer.launchsport:disabled by app profile
+  air.com.vudu.air.DownloaderTablet:disabled by policy
+  com.zattoo.player:disabled by policy
+  com.nvidia.bbciplayer.launch:disabled by app profile
+Apps postponed in US(locale) in last check
+  pt.nostv.tv: not installed
+  com.netflix.ninja:uid=0,status=0;
+No app upgrade blocking log
+
+C:\Windows\System32>adb shell dumpsys package com.google.android.tvrecommendations
+Activity Resolver Table:
+  Schemes:
+      https:
+        472abd5 com.google.android.tvrecommendations/com.google.android.libraries.tv.surveys.DisplayLegalTextActivity filter ec3fea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Authority: "www.google.com": -1
+          Path: "PatternMatcher{PREFIX: /policies}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.app.action.TOGGLE_NOTIFICATION_HANDLER_PANEL:
+        a257a06 com.google.android.tvrecommendations/.NotificationsSidePanelHandler filter c6ebef4
+          Action: "android.app.action.TOGGLE_NOTIFICATION_HANDLER_PANEL"
+          Category: "android.intent.category.DEFAULT"
+      com.android.tv.action.VIEW_LICENSES:
+        e0dd61d com.google.android.tvrecommendations/.OpenSourceActivity filter a8f3092
+          Action: "com.android.tv.action.VIEW_LICENSES"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.tv.ads.intent.action.LAUNCH_ATC_MENU:
+        2b05a63 com.google.android.tvrecommendations/.ads.atc.AtcActivity filter c32d660
+          Action: "com.google.android.tv.ads.intent.action.LAUNCH_ATC_MENU"
+          Category: "android.intent.category.DEFAULT"
+      com.android.tv.NOTIFICATIONS_PANEL:
+        8838648 com.google.android.tvrecommendations/.NotificationsSidePanelActivity filter 69a4ce1
+          Action: "com.android.tv.action.OPEN_NOTIFICATIONS_PANEL"
+          Action: "com.android.tv.NOTIFICATIONS_PANEL"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tv.REAUTH:
+        94439bf com.google.android.tvrecommendations/com.google.android.libraries.tv.reauth.ReauthActivity filter 45ef88c
+          Action: "com.google.android.apps.tv.REAUTH"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.tvlauncher.action.LAUNCH_FEEDBACK_UI:
+        d36b719 com.google.android.tvrecommendations/.feedback.SendFeedbackActivity filter 26bc3de
+          Action: "com.google.android.tvlauncher.action.LAUNCH_FEEDBACK_UI"
+          Category: "android.intent.category.DEFAULT"
+      android.media.tv.action.REQUEST_CHANNEL_BROWSABLE:
+        736543a com.google.android.tvrecommendations/.AddChannelActivity filter ea7b8eb
+          Action: "android.media.tv.action.REQUEST_CHANNEL_BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+      com.android.tv.action.OPEN_NOTIFICATIONS_PANEL:
+        8838648 com.google.android.tvrecommendations/.NotificationsSidePanelActivity filter 69a4ce1
+          Action: "com.android.tv.action.OPEN_NOTIFICATIONS_PANEL"
+          Action: "com.android.tv.NOTIFICATIONS_PANEL"
+          Category: "android.intent.category.DEFAULT"
+      android.app.action.OPEN_NOTIFICATION_HANDLER_PANEL:
+        a257a06 com.google.android.tvrecommendations/.NotificationsSidePanelHandler filter 3c6f8c7
+          Action: "android.app.action.OPEN_NOTIFICATION_HANDLER_PANEL"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        4510af com.google.android.tvrecommendations/.MarketUpdateReceiver filter ed79cbc
+          Action: "com.android.launcher.action.ACTION_PACKAGE_ENQUEUED"
+          Action: "com.android.launcher.action.ACTION_PACKAGE_DOWNLOADING"
+          Action: "com.android.launcher.action.ACTION_PACKAGE_INSTALLING"
+          Action: "com.android.launcher.action.ACTION_PACKAGE_DEQUEUED"
+          Scheme: "package"
+      tvrecommendations:
+        39ca253 com.google.android.tvrecommendations/.AppsLaunchReceiver filter 2589790
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tvrecommendations"
+          Authority: "apps": -1
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        f572b31 com.google.android.tvrecommendations/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 2c8216
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.libraries.tv.surveys.action.DISMISS_OR_EXPIRE_NOTIFICATION:
+        ac2496d com.google.android.tvrecommendations/com.google.android.libraries.tv.surveys.SurveyNotificationDismissReceiver filter e66a9a2
+          Action: "com.google.android.libraries.tv.surveys.action.DISMISS_OR_EXPIRE_NOTIFICATION"
+      com.android.tv.action.OPEN_NOTIFICATION:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      com.android.tv.action.NOTIFICATION_HIDE:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.VIEW:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.tvrecommendations.PROGRAM_LAUNCH_LOG_EVENT:
+        8f73445 com.google.android.tvrecommendations/.ProgramLaunchEventReceiver filter 58c779a
+          Action: "com.google.android.tvrecommendations.PROGRAM_LAUNCH_LOG_EVENT"
+      com.android.tv.action.STOP_BACKGROUND_AUDIO:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        de4babb com.google.android.tvrecommendations/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 2eaabd8
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      android.tvservice.action.NOTIFICATION_HIDE:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.LOCALE_CHANGED:
+        961839f com.google.android.tvrecommendations/.promos.server.LocaleChangeReceiver filter 99acec
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.tvrecommendations.HOME_SCREEN_SETTINGS_CHANGE_LOG_EVENT:
+        15bcfc1 com.google.android.tvrecommendations/.HomeScreenStateTrackingEventReceiver filter daa7366
+          Action: "com.google.android.tvrecommendations.FAVORITE_APPS_STATE_CHANGE_LOG_EVENT"
+          Action: "com.google.android.tvrecommendations.HOME_SCREEN_SETTINGS_CHANGE_LOG_EVENT"
+          Action: "com.google.android.tvrecommendations.PARTNER_WIDGET_INFO_CHANGE_LOG_EVENT"
+      com.google.android.tvrecommendations.FAVORITE_APPS_STATE_CHANGE_LOG_EVENT:
+        15bcfc1 com.google.android.tvrecommendations/.HomeScreenStateTrackingEventReceiver filter daa7366
+          Action: "com.google.android.tvrecommendations.FAVORITE_APPS_STATE_CHANGE_LOG_EVENT"
+          Action: "com.google.android.tvrecommendations.HOME_SCREEN_SETTINGS_CHANGE_LOG_EVENT"
+          Action: "com.google.android.tvrecommendations.PARTNER_WIDGET_INFO_CHANGE_LOG_EVENT"
+      com.google.gservices.intent.action.GSERVICES_CHANGED:
+        575808d com.google.android.tvrecommendations/.GservicesChangesReceiver filter a40e242
+          Action: "com.google.gservices.intent.action.GSERVICES_CHANGED"
+      com.google.android.tvrecommendations.intent.action.SEND_BOOT_CONFIG:
+        4e2c643 com.google.android.tvrecommendations/.boot.BootConfigReceiver filter 7c904c0
+          Action: "com.google.android.tvrecommendations.intent.action.SEND_BOOT_CONFIG"
+      android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.tvlauncher.action.LAUNCH_FEEDBACK_UI:
+        ea6b8b5 com.google.android.tvrecommendations/.feedback.SendFeedbackReceiver filter a41fb4a
+          Action: "com.google.android.tvlauncher.action.LAUNCH_FEEDBACK_UI"
+      android.intent.action.PRE_BOOT_COMPLETED:
+        23f3051 com.google.android.tvrecommendations/.PrebootCompletedReceiver filter 54670b6
+          Action: "android.intent.action.PRE_BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        90cb2db com.google.android.tvrecommendations/.BootCompletedReceiver filter 9491178
+          Action: "android.intent.action.BOOT_COMPLETED"
+        eb1c633 com.google.android.tvrecommendations/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a871df0
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.android.tv.action.DISMISS_NOTIFICATION:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      android.tvservice.action.STOP_BACKGROUND_AUDIO:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.tvrecommendations.CHANNEL_ORDER_CHANGE_LOG_EVENT:
+        45c08cb com.google.android.tvrecommendations/.ChannelOrderChangeEventReceiver filter ddfc8a8
+          Action: "com.google.android.tvrecommendations.CHANNEL_ORDER_CHANGE_LOG_EVENT"
+      com.google.android.tvrecommendations.intent.action.WATCH_NEXT_ENABLED_STATUS_CHANGED:
+        614a6fd com.google.android.tvrecommendations/.WatchNextPreferenceReceiver filter 65a5ff2
+          Action: "com.google.android.tvrecommendations.intent.action.WATCH_NEXT_DISABLED_PACKAGES_CHANGED"
+          Action: "com.google.android.tvrecommendations.intent.action.WATCH_NEXT_ENABLED_STATUS_CHANGED"
+      com.google.android.tvrecommendations.PARTNER_WIDGET_INFO_CHANGE_LOG_EVENT:
+        15bcfc1 com.google.android.tvrecommendations/.HomeScreenStateTrackingEventReceiver filter daa7366
+          Action: "com.google.android.tvrecommendations.FAVORITE_APPS_STATE_CHANGE_LOG_EVENT"
+          Action: "com.google.android.tvrecommendations.HOME_SCREEN_SETTINGS_CHANGE_LOG_EVENT"
+          Action: "com.google.android.tvrecommendations.PARTNER_WIDGET_INFO_CHANGE_LOG_EVENT"
+      com.google.android.tvrecommendations.intent.action.HOME_ACCOUNT_CHANGED:
+        7a066a7 com.google.android.tvrecommendations/.account.TvLauncherAccountReceiver filter abcc754
+          Action: "com.google.android.tvrecommendations.intent.action.HOME_ACCOUNT_CHANGED"
+      android.intent.action.DELETE:
+        7469889 com.google.android.tvrecommendations/.NotificationInteractionReceiver filter e7ee08e
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.DELETE"
+          Action: "android.tvservice.action.NOTIFICATION_HIDE"
+          Action: "android.tvservice.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "android.tvservice.action.STOP_BACKGROUND_AUDIO"
+          Action: "com.android.tv.action.OPEN_NOTIFICATION"
+          Action: "com.android.tv.action.DISMISS_NOTIFICATION"
+          Action: "com.android.tv.action.NOTIFICATION_HIDE"
+          Action: "com.android.tv.action.SHOW_UNSHOWN_NOTIFICATIONS"
+          Action: "com.android.tv.action.STOP_BACKGROUND_AUDIO"
+          Category: "android.intent.category.DEFAULT"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e470f69 com.google.android.tvrecommendations/androidx.work.impl.diagnostics.DiagnosticsReceiver filter f29bdee
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.google.android.gms.phenotype.UPDATE:
+        c89b5f9 com.google.android.tvrecommendations/.phenotype.PhenotypeBroadcastReceiver filter 3aa893e
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        59a4797 com.google.android.tvrecommendations/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter a4aad84
+          Action: "com.google.android.gms.phenotype.UPDATE"
+      com.google.android.tvrecommendations.intent.action.WATCH_NEXT_DISABLED_PACKAGES_CHANGED:
+        614a6fd com.google.android.tvrecommendations/.WatchNextPreferenceReceiver filter 65a5ff2
+          Action: "com.google.android.tvrecommendations.intent.action.WATCH_NEXT_DISABLED_PACKAGES_CHANGED"
+          Action: "com.google.android.tvrecommendations.intent.action.WATCH_NEXT_ENABLED_STATUS_CHANGED"
+      android.media.tv.action.CHANNEL_BROWSABLE_REQUESTED:
+        819a1b7 com.google.android.tvrecommendations/.AddChannelBroadcastReceiver filter cb9cd24
+          Action: "android.media.tv.action.CHANNEL_BROWSABLE_REQUESTED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        4b5c8ab com.google.android.tvrecommendations/com.google.android.build.data.PropertiesServiceHolder filter 3ccbb08
+          Action: "com.google.android.build.data.Properties"
+      android.service.notification.NotificationListenerService:
+        b8928f com.google.android.tvrecommendations/.NotificationsService filter 4d8291c permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        4383925 com.google.android.tvrecommendations/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 4f7cafa
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Permissions:
+  Permission [com.google.android.tv.permission.ROUTE_MARKET_UPDATE] (61f91cb):
+    sourcePackage=com.google.android.tvrecommendations
+    uid=10066 gids=null type=0 prot=signature
+    perm=Permission{7df1da8 com.google.android.tv.permission.ROUTE_MARKET_UPDATE}
+
+Permissions:
+  Permission [com.google.android.tvrecommendations.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (cf900c1):
+    sourcePackage=com.google.android.tvrecommendations
+    uid=10066 gids=null type=0 prot=signature
+    perm=Permission{a865066 com.google.android.tvrecommendations.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+
+Registered ContentProviders:
+  com.google.android.tvrecommendations/.promos.config.ConfigurationProvider:
+    Provider{c937fa7 com.google.android.tvrecommendations/.promos.config.ConfigurationProvider}
+  com.google.android.tvrecommendations/.ads.AdsSignalsContentProvider:
+    Provider{ddc6c54 com.google.android.tvrecommendations/.ads.AdsSignalsContentProvider}
+  com.google.android.tvrecommendations/androidx.startup.InitializationProvider:
+    Provider{cd3e7fd com.google.android.tvrecommendations/androidx.startup.InitializationProvider}
+  com.google.android.tvrecommendations/.backdrop.BackdropInfoContentProvider:
+    Provider{1970cf2 com.google.android.tvrecommendations/.backdrop.BackdropInfoContentProvider}
+  com.google.android.tvrecommendations/.ForegroundActivityContentProvider:
+    Provider{86e6f43 com.google.android.tvrecommendations/.ForegroundActivityContentProvider}
+  com.google.android.tvrecommendations/.ImageContentProvider:
+    Provider{dbdf9c0 com.google.android.tvrecommendations/.ImageContentProvider}
+  com.google.android.tvrecommendations/.NotificationContentProvider:
+    Provider{67c06f9 com.google.android.tvrecommendations/.NotificationContentProvider}
+
+ContentProvider Authorities:
+  [com.google.android.tvrecommendations.androidx-startup]:
+    Provider{cd3e7fd com.google.android.tvrecommendations/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{a85063e com.google.android.tvrecommendations}
+  [com.android.tv.notifications.NotificationContentProvider]:
+    Provider{67c06f9 com.google.android.tvrecommendations/.NotificationContentProvider}
+      applicationInfo=ApplicationInfo{47ebc9f com.google.android.tvrecommendations}
+  [com.google.android.tvrecommendations.ads.signals.AdsSignalsContentProvider]:
+    Provider{ddc6c54 com.google.android.tvrecommendations/.ads.AdsSignalsContentProvider}
+      applicationInfo=ApplicationInfo{968f1ec com.google.android.tvrecommendations}
+  [com.google.android.tvrecommendations.backdrop.BackdropInfoContentProvider]:
+    Provider{1970cf2 com.google.android.tvrecommendations/.backdrop.BackdropInfoContentProvider}
+      applicationInfo=ApplicationInfo{3ed19b5 com.google.android.tvrecommendations}
+  [com.google.android.tvrecommendations.ForegroundActivityContentProvider]:
+    Provider{86e6f43 com.google.android.tvrecommendations/.ForegroundActivityContentProvider}
+      applicationInfo=ApplicationInfo{c7484a com.google.android.tvrecommendations}
+  [com.google.android.tvrecommendations]:
+    Provider{dbdf9c0 com.google.android.tvrecommendations/.ImageContentProvider}
+      applicationInfo=ApplicationInfo{1c83bb com.google.android.tvrecommendations}
+  [com.google.android.tvrecommendations.NotificationContentProvider]:
+    Provider{67c06f9 com.google.android.tvrecommendations/.NotificationContentProvider}
+      applicationInfo=ApplicationInfo{9e940d8 com.google.android.tvrecommendations}
+  [tvrecs.config]:
+    Provider{c937fa7 com.google.android.tvrecommendations/.promos.config.ConfigurationProvider}
+      applicationInfo=ApplicationInfo{9229c31 com.google.android.tvrecommendations}
+
+Key Set Manager:
+  [com.google.android.tvrecommendations]
+      Signing KeySets: 26
+
+Packages:
+  Package [com.google.android.tvrecommendations] (e399f16):
+    userId=10066
+    pkg=Package{e05a097 com.google.android.tvrecommendations}
+    codePath=/data/app/~~TW6xTxwO_8N2z0LbJU4CsA==/com.google.android.tvrecommendations-dbrBOZ8piA6iHF4Sr0fUjA==
+    resourcePath=/data/app/~~TW6xTxwO_8N2z0LbJU4CsA==/com.google.android.tvrecommendations-dbrBOZ8piA6iHF4Sr0fUjA==
+    legacyNativeLibraryDir=/data/app/~~TW6xTxwO_8N2z0LbJU4CsA==/com.google.android.tvrecommendations-dbrBOZ8piA6iHF4Sr0fUjA==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=1010926451 minSdk=29 targetSdk=36
+    versionName=7.4.0-848496343-f
+    splits=[base, config.arm64_v8a, config.xhdpi]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{e05a097 com.google.android.tvrecommendations}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/com.google.android.tvrecommendations
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2026-03-28 03:17:26
+    firstInstallTime=2009-01-01 01:00:00
+    lastUpdateTime=2026-03-28 03:18:01
+    installerPackageName=com.android.vending
+    signatures=PackageSignatures{b1d9284 version:3, signatures:[1a837b04], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    declared permissions:
+      com.google.android.tv.permission.ROUTE_MARKET_UPDATE: prot=signature, INSTALLED
+      com.google.android.tvrecommendations.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.MEDIA_CONTENT_CONTROL
+      android.permission.GET_ACCOUNTS_PRIVILEGED
+      com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      com.android.providers.tv.permission.READ_EPG_DATA
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.SYSTEM_APPLICATION_OVERLAY
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.REAL_GET_TASKS
+      android.permission.RECEIVE_MEDIA_RESOURCE_USAGE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.tv.permission.ROUTE_MARKET_UPDATE
+      android.permission.INTERNET
+      android.permission.DUMP
+      android.permission.READ_LOGS
+      android.permission.STOP_APP_SWITCHES
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.tvrecommendations.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.providers.tv.permission.READ_EPG_DATA: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.providers.tv.permission.WRITE_EPG_DATA: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.STOP_APP_SWITCHES: granted=true
+      android.permission.RECEIVE_MEDIA_RESOURCE_USAGE: granted=true
+      android.permission.GET_ACCOUNTS_PRIVILEGED: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.tv.permission.ROUTE_MARKET_UPDATE: granted=true
+      com.google.android.tvrecommendations.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.MEDIA_CONTENT_CONTROL: granted=true
+    User 0: ceDataInode=262482 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      lastDisableTimeStamp: Sat Mar 28 03:18:01 GMT+01:00 2026
+      gids=[3003]
+      runtime permissions:
+      enabledComponents:
+        com.google.android.libraries.tv.reauth.ReauthActivity
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.tvrecommendations] (453ca6d):
+    userId=10066
+    pkg=Package{ca896a2 com.google.android.tvrecommendations}
+    codePath=/system/product/priv-app/TVRecommendations
+    resourcePath=/system/product/priv-app/TVRecommendations
+    legacyNativeLibraryDir=/system/product/priv-app/TVRecommendations/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1010902401 minSdk=26 targetSdk=29
+    versionName=3.1.1-362554353-f
+    splits=[base]
+    apkSigningVersion=0
+    applicationInfo=ApplicationInfo{ca896a2 com.google.android.tvrecommendations}
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/com.google.android.tvrecommendations
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    timeStamp=2009-01-01 01:00:00
+    firstInstallTime=2009-01-01 01:00:00
+    lastUpdateTime=2009-01-01 01:00:00
+    signatures=PackageSignatures{4f9af33 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.google.android.tv.permission.ROUTE_MARKET_UPDATE: prot=signature
+    requested permissions:
+      android.permission.MEDIA_CONTENT_CONTROL
+      android.permission.GET_ACCOUNTS_PRIVILEGED
+      com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      com.android.providers.tv.permission.READ_EPG_DATA
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.SYSTEM_APPLICATION_OVERLAY
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.REAL_GET_TASKS
+      android.permission.RECEIVE_MEDIA_RESOURCE_USAGE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.tv.permission.ROUTE_MARKET_UPDATE
+      android.permission.INTERNET
+      android.permission.STOP_APP_SWITCHES
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.providers.tv.permission.READ_EPG_DATA: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.providers.tv.permission.WRITE_EPG_DATA: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.STOP_APP_SWITCHES: granted=true
+      android.permission.RECEIVE_MEDIA_RESOURCE_USAGE: granted=true
+      android.permission.GET_ACCOUNTS_PRIVILEGED: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.tv.permission.ROUTE_MARKET_UPDATE: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.MEDIA_CONTENT_CONTROL: granted=true
+    User 0: ceDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      lastDisableTimeStamp: Thu Jan 01 01:00:00 GMT+01:00 1970
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+    com.plexapp.android:
+      com.google.android.tvrecommendations
+    com.google.android.backdrop:
+      com.google.android.tvrecommendations
+    com.sfr.android.sfrsport:
+      com.google.android.tvrecommendations
+  queries via intent:
+    com.mxtech.videoplayer.ad:
+      com.google.android.tvrecommendations
+  queryable via interaction:
+    User 0:
+      [com.nvidia.shieldservice,com.nvidia.shield.registration,com.android.keychain,com.android.tv.settings,com.android.inputdevices,com.android.providers.settings,com.nvidia.overscancomp,com.nvidia.wifi.countrycode,com.nvidia.nvgamecast,com.nvidia.factory,com.android.networkstack.inprocess,com.android.localtransport,com.nvidia.tegraprofiler.security,com.android.dynsystem,com.nvidia.shieldtech.hooks,com.nvidia.remotelocator,com.nvidia.shield.appselector,com.android.wallpaperbackup,com.nvidia.NvCPLSvc,com.android.location.fused,com.nvidia.diagtools,com.nvidia.bluetooth.ps3usbpairer,com.nvidia.factorybundling,android,com.nvidia.stats,com.nvidia.ControllerMapper,com.nvidia.bluetooth.ShieldBluetoothManager,com.nvidia.KeyComboOta,com.nvidia.NvCPLUpdater,com.nvidia.factorysyschecker,com.nvidia.feedback,com.nvidia.shield.smbserver,com.nvidia.nvaudiosvc,com.nvidia.benchmarkblocker,com.nvidia.shieldtech.proxy,com.nvidia.irtuner,com.android.networkstack.tethering.inprocess]:
+        com.google.android.tvrecommendations
+      com.android.providers.tv:
+        com.google.android.tvrecommendations
+      com.nvidia.shield.nvcustomize:
+        com.google.android.tvrecommendations
+      com.google.android.tvrecommendations:
+        [com.nvidia.shieldservice,com.nvidia.shield.registration,com.android.keychain,com.android.tv.settings,com.android.inputdevices,com.android.providers.settings,com.nvidia.overscancomp,com.nvidia.wifi.countrycode,com.nvidia.nvgamecast,com.nvidia.factory,com.android.networkstack.inprocess,com.android.localtransport,com.nvidia.tegraprofiler.security,com.android.dynsystem,com.nvidia.shieldtech.hooks,com.nvidia.remotelocator,com.nvidia.shield.appselector,com.android.wallpaperbackup,com.nvidia.NvCPLSvc,com.android.location.fused,com.nvidia.diagtools,com.nvidia.bluetooth.ps3usbpairer,com.nvidia.factorybundling,android,com.nvidia.stats,com.nvidia.ControllerMapper,com.nvidia.bluetooth.ShieldBluetoothManager,com.nvidia.KeyComboOta,com.nvidia.NvCPLUpdater,com.nvidia.factorysyschecker,com.nvidia.feedback,com.nvidia.shield.smbserver,com.nvidia.nvaudiosvc,com.nvidia.benchmarkblocker,com.nvidia.shieldtech.proxy,com.nvidia.irtuner,com.android.networkstack.tethering.inprocess]
+        com.google.android.tvlauncher
+      com.android.vending:
+        com.google.android.tvrecommendations
+      [com.google.android.gms,com.google.android.gsf,com.google.android.sss.authbridge]:
+        com.google.android.tvrecommendations
+
+Package Changes:
+  Sequence number=9
+  User 0:
+    seq=3, package=com.google.android.tvrecommendations
+    seq=4, package=com.nvidia.bbciplayer.launchsport
+    seq=5, package=com.nvidia.bbciplayer.launch
+    seq=7, package=com.netflix.ninja
+    seq=8, package=android.autoinstalls.config.nvidia
+
+
+Dexopt state:
+  [com.google.android.tvrecommendations]
+    path: /data/app/~~TW6xTxwO_8N2z0LbJU4CsA==/com.google.android.tvrecommendations-dbrBOZ8piA6iHF4Sr0fUjA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt]
+
+
+Compiler stats:
+  [com.google.android.tvrecommendations]
+     base.apk - 2374
+     TVRecommendations.apk - 222
+GeoCountry provider:
+  #0 ip-for-legacy-device:false FR Pair{ip-for-legacy-device location service is [off] last known location is null IPGeoProvider : allowProxy false; last invalid result null; last success result date Fri Oct 30 18:03:13 GMT+01:00 2026}
+  #1 locale:true US Pair{locale com.android.server.pm.LanguageGeoProvider@2735545}
+Policy repo contains 10 policies
+NvAppHidingByRegions List:
+  com.nvidia.bbciplayer.launchsport: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  com.nvidia.bbciplayer.launchsounds: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  pt.nostv.tv: {always : postpone}
+  air.com.vudu.air.DownloaderTablet: {provider_sensitive: {
+        locale : {always : disable}
+        ip-for-legacy-device : {whitelist:[AS, GU, MP, PR, US, VI]}
+        ip : {whitelist:[AS, GU, MP, PR, US, VI]}
+        location : {whitelist:[AS, GU, MP, PR, US, VI]}
+         }}
+  com.amazon.amazonvideo.livingroom: {whitelist:[AD, AE, AF, AG, AI, AL, AM, AO, AQ, AR, AS, AT, AU, AW, AX, AZ, BA, BB, BD, BE, BF, BG, BH, BI, BJ, BL, BM, BN, BO, BR, BS, BT, BV, BW, BY, BZ, CA, CC, CD, CF, CG, CH, CI, CK, CL, CM, CO, CR, CV, CW, CX, CY, CZ, DE, DJ, DK, DM, DO, DZ, EC, EE, EG, EH, ER, ES, ET, FI, FJ, FK, FM, FO, FR, GA, GB, GD, GE, GF, GG, GH, GI, GL, GM, GN, GP, GQ, GR, GS, GT, GU, GW, GY, HK, HM, HN, HR, HT, HU, ID, IE, IL, IM, IN, IO, IQ, IS, IT, JE, JM, JO, JP, KE, KG, KH, KI, KM, KN, KR, KW, KY, KZ, LA, LB, LC, LI, LK, LR, LS, LT, LU, LV, LY, MA, MC, MD, ME, MF, MG, MH, MK, ML, MM, MN, MO, MP, MQ, MR, MS, MT, MU, MV, MW, MX, MY, MZ, NA, NC, NE, NF, NG, NI, NL, NO, NP, NR, NU, NZ, OM, PA, PE, PF, PG, PH, PK, PL, PM, PN, PR, PS, PT, PW, PY, QA, RE, RO, RS, RU, RW, SA, SB, SC, SE, SG, SH, SI, SJ, SK, SL, SM, SN, SO, SR, SS, ST, SV, SZ, TC, TD, TF, TG, TH, TJ, TK, TL, TM, TN, TO, TR, TT, TV, TW, TZ, UA, UG, UM, US, UY, UZ, VA, VC, VE, VG, VI, VN, VU, WF, WS, YE, YT, ZA, ZM, ZW]}
+  com.zattoo.player: {state_sensitive:
+        default :{provider_sensitive: {
+        locale : {whitelist:[CH, DE]}
+        ip-for-legacy-device : {whitelist:[CH, DE]}
+        ip : {whitelist:[CH, DE]}
+        location : {whitelist:[CH, DE]}
+         }}
+        enabled :{always : postpone}
+        disabled        :{provider_sensitive: {
+        locale : {whitelist:[CH, DE]}
+        ip-for-legacy-device : {whitelist:[CH, DE]}
+        ip : {whitelist:[CH, DE]}
+        location : {whitelist:[CH, DE]}
+         }}
+        disabled_user   :{always : postpone}
+        disabled_until_used     :{always : postpone}}
+  com.amazon.music.tv: {whitelist:[AU, BR, CA, DE, ES, FR, GB, IE, IN, IT, JP, MX, US]}
+  air.ITVMobilePlayer: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  com.nvidia.bbciplayer: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  com.nvidia.bbciplayer.launch: {provider_sensitive: {
+        locale : {whitelist:[GB, IM, US]}
+        ip-for-legacy-device : {whitelist:[GB, IM]}
+        ip : {whitelist:[GB, IM]}
+        location : {whitelist:[GB, IM]}
+         }}
+  com.netflix.ninja: {always : postpone}
+NvAppHidingByOverride list:
+  air.com.vudu.air.DownloaderTablet overrides com.nvidia.vuduapp
+Apps disabled in US(locale,E)by region rules:
+  com.nvidia.bbciplayer.launchsport:disabled by app profile
+  air.com.vudu.air.DownloaderTablet:disabled by policy
+  com.zattoo.player:disabled by policy
+  com.nvidia.bbciplayer.launch:disabled by app profile
+Apps postponed in US(locale) in last check
+  pt.nostv.tv: not installed
+  com.netflix.ninja:uid=0,status=0;
+No app upgrade blocking log
+
+C:\Windows\System32>adb shell dumpsys package com.google.android.tvlauncher | findstr /i "versionName versionCode"
+    versionCode=1010943512 minSdk=29 targetSdk=36
+    versionName=7.7.15-968255986-f
+    versionCode=1010902809 minSdk=26 targetSdk=29
+    versionName=3.1.2-366946414-f
+
+C:\Windows\System32>
